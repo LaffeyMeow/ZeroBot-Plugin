@@ -21,7 +21,7 @@ var ttsmd = newttsmode()
 
 func init() { // 插件主体
 	ent := control.Register("tts", &ctrl.Options[*zero.Ctx]{
-		DisableOnDefault: true,
+		DisableOnDefault: false,
 		Brief:            "人工智能语音回复",
 		Help: "- @Bot 任意文本(任意一句话回复)\n" +
 			"- 设置语音模式[原神人物/百度/TTSCN] 数字(百度/TTSCN说话人)\n" +
